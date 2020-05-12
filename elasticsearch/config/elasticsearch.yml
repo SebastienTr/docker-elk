@@ -11,3 +11,15 @@ network.host: 0.0.0.0
 xpack.license.self_generated.type: trial
 xpack.security.enabled: true
 xpack.monitoring.collection.enabled: true
+
+indices.breaker.accounting.limit: 100%
+indices.breaker.accounting.overhead: 1.2
+indices.breaker.fielddata.limit: 60%
+indices.breaker.fielddata.overhead: 1.1
+indices.breaker.fielddata.type: memory
+indices.breaker.request.limit: 60%
+indices.breaker.request.overhead: 1.2
+indices.breaker.request.type: memory
+indices.breaker.total.limit: 95%
+indices.breaker.total.use_real_memory: true
+indices.breaker.type: hierarchy
